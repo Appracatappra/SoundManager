@@ -1,0 +1,12 @@
+version: 1
+builder:
+  configs:
+  - platform: ios
+    scheme: SoundManager
+  - platform: macos-xcodebuild
+    scheme: SoundManager
+  - platform: tvos
+    scheme: SoundManager
+  - platform: watchos
+    scheme: SoundManager
+  - documentation_targets: [SoundManager]

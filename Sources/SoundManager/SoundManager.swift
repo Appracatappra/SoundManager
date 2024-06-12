@@ -35,7 +35,7 @@ open class SoundManager: NSObject, AVAudioPlayerDelegate {
     
     // MARK: - Static Properties
     /// Defines the common, shared instance of the Sound Manager
-    static public var shared:SoundManager = SoundManager()
+    static public nonisolated(unsafe) let shared:SoundManager = SoundManager()
     
     // MARK: - Properties
     /// Global variable that if `true`, background music will be played in the game.
